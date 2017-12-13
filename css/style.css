@@ -1,36 +1,257 @@
-ul {
+@font-face {
+  font-family: "Bunga";
+  src: url('../Fonts/Bungasai.ttf');
+}
+/* Liens de la barre de navigation*/
+.boutonnav{
   list-style: none;
   margin: 0;
   padding: 0;
-
   height: 100px;
   width:40%;
   float: right;
 }
-
-li  {
+/*logo de la barre de naviugation*/
+.poupipou {
+  width:300px;
+  margin-bottom: :10%;
+}
+/* taille et police des liens de la barre de navigation*/
+ul a {
+  color: white;
+  font-size: 20px;
+  font-family: Bunga;
+}
+/*positionnement des liens de la barre de navigation*/
+.mamamia {
  display: inline;
  margin-left: 40px;
- margin-right: 5px;
- margin-top:89px;
+ margin-right: 15px;
+ margin-top:30px;
  font-size: 18px;
 }
-li button{
-  background-color: lightblue;
-}
-li button:active {
-  background-color: pink;
-  transition: background-color 2s;
-}
+/*decallage a droite de mes liens*/
 .mamamia {
   float: right;
 }
-.poupipou {
-  width:55%;
-  margin-bottom: :10%;
-}
+/*barre de navigation*/
 nav {
-  background-color: orange;
-  height: 200px;
-  border: 1px solid black;
+  background-color:#33425b;
+  height: 100px;
+  width: 100%;
+  border: 5px solid #252a34;
+
+}
+ .section1 {
+   border: 5px solid #252a34;
+   background-image:url(../image/Ressources/lameuf.jpg);
+   background-position: center;
+   background-attachment: fixed;
+   height:110%;
+   width:100%;
+  }
+/* Configurations du paragraphe encadré de la section 1*/
+  .carré {
+    border: 3px solid #33425b;
+    height: 40%;
+    width: 30%;
+    background-position: left;
+    margin-top: 200px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+/* titre Rose prevost*/
+h1 {
+  text-align:justify;
+  text-align-last: left;
+  font-size:20px;
+  font-family: monospace;
+ }
+/* texte de la section1*/
+ .grelotine {
+ font-family: sans-serif;
+ text-align-last: left;
+ text-align: justify;
+ }
+
+ .section2 {
+   border: 5px solid #252a34;
+   height:600px;
+   width:100%;
+   background-image: url(../image/Ressources/flower20.jpg);
+   background-position: center;
+}
+/* paramètres des 4 encadrés de la section 2*/
+.prix {
+  height: 270px;
+  width: 200px;
+  border: 3px solid #33425b;
+  background-color: white;
+  text-align: left;
+  position: relative;
+}
+/* images des 4 encadrés*/
+.prix img{
+  height:150px;
+  width: 160px;
+  background-color: pink;
+  margin:  20px;
+}
+/* Titres des 4 encadrés*/
+h3 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* trompe l'oeil pour placer "nous vous proposons" à droite*/
+ .tromper {
+   height: 600px;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
+
+ .section3 {
+   border: 5px solid #252a34;
+   background-image:url(../image/Ressources/flower14.jpg);
+   background-position: right;
+   height: 800px;
+   width: 100%;
+}
+/* positionnement de la liste de logo reseaux sociaux*/
+.reseauxsociaux {
+  margin-top: 700px;
+  height: 22px;
+  list-style-type: none;
+
+}
+.reseauxsociaux li {
+  float: right;
+  margin-right: 25px;
+}
+/*logo facebook*/
+.facebook img{
+  height:50px;
+  width:50px;
+}
+/*logo twitter*/
+.twitter img{
+  height: 50px;
+  width: 50px;
+}
+/*logo instagram*/
+.instagram img{
+  height: 50px;
+  width: 50px;
+}
+/*logo mail to*/
+.mailto img{
+  height: 50px;
+  width: 50px;
+}
+
+/* texte de l'encadré dans la section3*/
+.sloubi {
+  font-family: sans-serif;
+}
+
+/*configurations des elements de la section3*/
+.ragondin {
+  font-family: Bunga;
+  border: 3px solid #33425b;
+  float: right;
+  height: 380px;
+  width: 30%;
+  margin-top: 300px;
+}
+
+/* gestion de la phrase "nous vous proposons*/"
+.propos {
+  font-family: Bunga;
+  float: right;
+}
+
+p {
+  text-align: justify;
+  text-align-last: right;
+  font-family: Bunga;
+}
+/*gestion des 4 encadrés "prix"*/
+.pognon {
+  text-align: right;
+  border: 1px solid #33425b;
+  border-bottom: 0px;
+  border-right: 0px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-size: 19px;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+.section4 {
+  height: 800px;
+  width: 100%;
+  border: 5Px solid #252a34;
+  background-image:url(../image/Ressources/fleufleur.jpg);
+  background-position: center;
+}
+ /* gestion du formulaire en bas de page */
+#formulaire {
+  border: 2px solid #33425b;
+  text-align: center;
+  margin-left: 475px;
+  margin-top: 250px;
+  background-image:url(../image/Ressources/planche.jpg);
+  width: 30%;
+}
+/* 3e champs du formulaire*/
+textarea {
+  height:200px;
+  width:300px;
+}
+/*animation du bouton du formulaire*/
+input[type="submit"]:hover {
+  background-color:pink;
+  color:white;
+}
+
+footer {
+  color: white;
+  background-color: #252a34;
+  height: 40px;
+  width: 100%;
+  border: 5Px solid #252a34;
+}
+footer span{
+}
+
+.reseauxsociauxfooter {
+  list-style: none;
+  display: inline;
+}
+
+.reseauxsociauxfooter li {
+  display: inline;
+  float: right;
+  margin-right: 15px;
+}
+
+/*logo facebook du footer*/
+.facebookfooter img{
+  height:30px;
+  width:30px;
+}
+/*logo twitter du footer*/
+.twitterfooter img{
+  height: 30px;
+  width: 30px;
+}
+/*logo instagram du footer*/
+.instagramfooter img{
+  height: 30px;
+  width: 30px;
 }
